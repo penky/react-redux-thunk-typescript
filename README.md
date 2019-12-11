@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The command used was: **npx create-react-app . --typescript**
+
 ## Available Scripts
 
 In the project directory, you can run:
