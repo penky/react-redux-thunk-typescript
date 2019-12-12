@@ -2,15 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f599125-0106-4423-a3b3-eb69c28ce0ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomerComponent/CustomerComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShoppingBasketComponent/ShoppingBasketComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/CustomerReducer/actions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/CustomerReducer/reducer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/CustomerReducer/state.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/CustomerReducer/types.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ShoppingBasketReducer/actions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ShoppingBasketReducer/reducer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ShoppingBasketReducer/state.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ShoppingBasketReducer/types.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,13 +48,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/secondReducer" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/store/secondReducer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Debug Application">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -69,11 +102,102 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576095428826</updated>
-      <workItem from="1576095430000" duration="469000" />
+      <workItem from="1576095430000" duration="5613000" />
+      <workItem from="1576143592018" duration="15855000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="624" height="466" key="DebuggerActiveHint" timestamp="1576161482262">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="624" height="466" key="DebuggerActiveHint/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576161482262" />
+    <state width="948" height="330" key="GridCell.Tab.0.bottom" timestamp="1576162709627">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709627" />
+    <state width="948" height="266" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576153146848" />
+    <state width="948" height="330" key="GridCell.Tab.0.center" timestamp="1576162709627">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709627" />
+    <state width="948" height="266" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576153146848" />
+    <state width="948" height="330" key="GridCell.Tab.0.left" timestamp="1576162709627">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709627" />
+    <state width="948" height="266" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576153146848" />
+    <state width="948" height="330" key="GridCell.Tab.0.right" timestamp="1576162709627">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709627" />
+    <state width="948" height="266" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576153146848" />
+    <state width="948" height="330" key="GridCell.Tab.1.bottom" timestamp="1576162709628">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709628" />
+    <state width="948" height="330" key="GridCell.Tab.1.center" timestamp="1576162709627">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709627" />
+    <state width="948" height="330" key="GridCell.Tab.1.left" timestamp="1576162709627">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709627" />
+    <state width="948" height="330" key="GridCell.Tab.1.right" timestamp="1576162709627">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709627" />
+    <state width="948" height="330" key="GridCell.Tab.2.bottom" timestamp="1576162709628">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.2.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709628" />
+    <state width="948" height="330" key="GridCell.Tab.2.center" timestamp="1576162709628">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.2.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709628" />
+    <state width="948" height="330" key="GridCell.Tab.2.left" timestamp="1576162709628">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.2.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709628" />
+    <state width="948" height="330" key="GridCell.Tab.2.right" timestamp="1576162709628">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="948" height="330" key="GridCell.Tab.2.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576162709628" />
+    <state width="1897" height="330" key="GridCell.Tab.3.bottom" timestamp="1576147220140">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="330" key="GridCell.Tab.3.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576147220140" />
+    <state width="1897" height="330" key="GridCell.Tab.3.center" timestamp="1576147220140">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="330" key="GridCell.Tab.3.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576147220140" />
+    <state width="1897" height="330" key="GridCell.Tab.3.left" timestamp="1576147220140">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="330" key="GridCell.Tab.3.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576147220140" />
+    <state width="1897" height="330" key="GridCell.Tab.3.right" timestamp="1576147220140">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="330" key="GridCell.Tab.3.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576147220140" />
+    <state x="667" y="265" width="576" height="583" key="RollbackChangesDialog" timestamp="1576144851942">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="667" y="265" width="576" height="583" key="RollbackChangesDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576144851942" />
+    <state x="449" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1576149342838">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="188" width="1022" height="737" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576149342838" />
+    <state x="2531" y="138" width="698" height="804" key="find.popup" timestamp="1576156305190">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2531" y="138" width="698" height="804" key="find.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576156305190" />
+    <state x="624" y="252" key="run.anything.popup" timestamp="1576144776264">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="624" y="252" key="run.anything.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1576144776264" />
   </component>
 </project>

@@ -1,7 +1,36 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This intention of this project was to record the code changes required to implement a react application with redux and 
+redux thunk using typescript. 
 
-The command used was: **npx create-react-app . --typescript**
+The command used create the initial application was: 
+```
+npx create-react-app . --typescript**
+```
 
+Further npm commands used to add the redux and redux thunk dependencies: 
+```
+npm install react-redux
+npm install @types/react-redux --save-dev
+npm install redux-devtools-extension
+npm install redux-thunk
+npm install react-router-dom
+```
+######(todo --save-dev needs to be added to the other @types)
+Finally the react-router-dom was added
+```
+npm install @types/react-router-dom
+```
+
+## Note: Trouble shooting
+I had some issues on my machine (fedora 31) with regard to automatic recompiling when applying changes. In this case there wasn't 
+enough watches. This was fixed by running the following command:
+ 
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+
+#Below is the usual react documentation
 ## Available Scripts
 
 In the project directory, you can run:

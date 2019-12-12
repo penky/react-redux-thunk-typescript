@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Link} from "react-router-dom";
+import CustomerComponent from "./CustomerComponent/CustomerComponent";
+import ShoppingBasketComponent from "./ShoppingBasketComponent/ShoppingBasketComponent";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+          <nav>
+              <ul>
+                  <li>
+                      <Link to="/customer">Customer</Link>
+                  </li>
+                  <li>
+                      <Link to="/shoppingBasket">ShoppingBasket</Link>
+                  </li>
+              </ul>
+          </nav>
+          <div className="App">
+              <p>DEMO</p>
+              <Route path="/customer" exact render={() => <CustomerComponent/>} />
+              <Route path="/shoppingBasket" exact render={() => <ShoppingBasketComponent/>} />
+          </div>
+      </BrowserRouter>
   );
-}
+};
 
 export default App;
