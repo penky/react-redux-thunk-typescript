@@ -1,5 +1,6 @@
 import {CustomerType} from "./types";
 
 export interface CustomerState {
-    customerType : CustomerType
+    customerType : CustomerType,
+    updating: boolean
 }

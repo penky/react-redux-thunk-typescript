@@ -1,6 +1,7 @@
 
 export const UPDATE_CUSTOMER_ACTION = 'UPDATE_CUSTOMER_ACTION';
 export const CLEAR_CUSTOMER_ACTION = 'CLEAR_CUSTOMER_ACTION';
+export const START_UPDATING_CUSTOMER_ACTION = 'START_UPDATING_CUSTOMER_ACTION';
 
 
 export interface CustomerType {
@@ -17,5 +18,11 @@ export interface ClearCustomerType {
     type: typeof CLEAR_CUSTOMER_ACTION
 }
 
+export interface StartUpdatingCustomerType  {
+    type: typeof START_UPDATING_CUSTOMER_ACTION
+}
 
-export type ActionType = UpdateCustomerType | ClearCustomerType;
+
+export type ActionType = UpdateCustomerType |
+    ClearCustomerType |
+    StartUpdatingCustomerType;

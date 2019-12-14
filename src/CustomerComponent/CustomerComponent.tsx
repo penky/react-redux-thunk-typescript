@@ -20,7 +20,8 @@ interface DispatchProps {
 
 interface StateProps {
     name: string,
-    address : string
+    address : string,
+    updating : boolean
 }
 
 
@@ -47,12 +48,16 @@ class CustomerComponent extends React.Component<Props, OwnState> {
     }
 
     render() {
+        let buttonText = "Update";
+        if (this.props.updating === true) {
+            buttonText = "Updating";
+        }
         return (
             <div>
                 <p>Customer Component</p>
                 <button onClick={this.props.onClearCustomer.bind(this)}>Clear</button>
                 <br/><br/>
-                <button onClick={this.props.onUpdateFirstType.bind(this,this.state.localName,this.state.localAddress)}>Update</button>
+                <button disabled={this.props.updating} onClick={this.props.onUpdateFirstType.bind(this,this.state.localName,this.state.localAddress)}>{buttonText}</button>
                 <br/>
                 <label>Name:</label>
                 <input onChange={this.onChangeName.bind(this)} value={this.state.localName}/>
@@ -70,7 +75,8 @@ class CustomerComponent extends React.Component<Props, OwnState> {
 const mapStateToProps : MapStateToProps<StateProps,OwnProps,RootState> = (rootState: RootState, ownProps : OwnProps): StateProps => {
     return {
         name : rootState.customerReducer.customerType.name,
-        address : rootState.customerReducer.customerType.address
+        address : rootState.customerReducer.customerType.address,
+        updating : rootState.customerReducer.updating
     }
 };
 
@@ -78,11 +84,17 @@ var mapDispatchToProps : MapDispatchToPropsParam<DispatchProps, OwnProps>;
 mapDispatchToProps = (dispatch: ThunkDispatch<RootState, any, ActionType>, OwnProps) => {
     return {
         onUpdateFirstType : async (aName : string, aAddress : string) => {
-            dispatch(customerActions.updateCustomerType(aName,aAddress))
+            dispatch(customerActions.startUpdating());
+            setTimeout(
+                () => dispatch(customerActions.updateCustomerType(aName,aAddress))
+            , 1000)
         },
         onClearCustomer : async () => {
-            dispatch(customerActions.clearCustomerType())
-        }
+            dispatch(customerActions.startUpdating());
+            setTimeout(
+                () => dispatch(customerActions.clearCustomerType())
+            ,1000)
+        },
     }
 };
 
